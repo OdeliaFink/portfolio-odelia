@@ -16,8 +16,9 @@ const NavigationBar = () => {
           display: 'flex',
           justifyContent: 'space-between',
           // margin: '3rem 5rem',
-          backgroundColor: 'grey',
+          backgroundColor: 'white',
           alignItems: 'center',
+          borderBottom: '1rem solid black',
         }}
       >
         <div className="logo" style={{ margin: '3rem 5rem' }}>
