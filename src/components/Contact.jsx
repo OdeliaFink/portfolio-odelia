@@ -8,6 +8,8 @@ const AboutMeContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-inline: 14rem;
+  margin-block: 3rem;
 `;
 
 const AboutMeLeft = styled.div`
@@ -70,16 +72,28 @@ const ContactFormButton = styled.button`
 
 const Contact = () => {
   return (
-    <AboutMeContainer>
-      <AboutMeLeft>
-        <AboutMeHeading>About Me</AboutMeHeading>
-        <AboutMeDescription>Insert your description here.</AboutMeDescription>
-      </AboutMeLeft>
-      <AboutMeRight>
-        <AboutMeImage src="your-image-url.jpg" alt="Your Name" />
-      </AboutMeRight>
+    <>
+      <AboutMeContainer>
+        <AboutMeLeft>
+          <AboutMeHeading>About Me</AboutMeHeading>
+          <AboutMeDescription>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </AboutMeDescription>
+        </AboutMeLeft>
+        <AboutMeRight>
+          <AboutMeImage src={Profile} alt="Your Name" />
+        </AboutMeRight>
+      </AboutMeContainer>
       <ContactForm />
-    </AboutMeContainer>
+    </>
   );
 };
 

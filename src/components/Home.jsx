@@ -1,6 +1,8 @@
 import React from 'react';
 import Image2 from '../images/image2.jpg';
 import Contact from './Contact';
+import Projects from './Projects';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -8,7 +10,7 @@ const Home = () => {
       <div style={{ height: 'auto', position: 'relative' }}>
         <div
           style={{
-            border: '3rem solid white',
+            border: '5rem solid white',
           }}
         >
           <img
@@ -27,10 +29,10 @@ const Home = () => {
             position: 'absolute',
             top: '2rem',
             left: '2rem',
-            paddingTop: '10rem',
+            paddingBlock: '10rem',
             paddingLeft: '4rem',
             marginRight: '54rem',
-            border: '1px solid white',
+            border: '.5rem solid grey',
           }}
         >
           <h1 style={{ fontSize: '3rem', fontWeight: 'bold', color: 'white' }}>
@@ -44,16 +46,18 @@ const Home = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button
-            style={{
-              padding: '1rem 5rem',
-              backgroundColor: 'grey',
-              border: 'none',
-              borderRadius: '2rem',
-            }}
-          >
-            learn more
-          </button>
+          <Link to="/projects">
+            <button
+              style={{
+                padding: '1rem 5rem',
+                backgroundColor: 'grey',
+                border: 'none',
+                borderRadius: '2rem',
+              }}
+            >
+              see projects
+            </button>
+          </Link>
         </div>
       </div>
     </>
