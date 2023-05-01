@@ -41,92 +41,115 @@ const ContactForm = () => {
   });
 
   return (
-    <Formik
-      initialValues={{ firstName: '', lastName: '', email: '', comments: '' }}
-      validationSchema={validationSchema}
-      onSubmit={handleSubmit}
-    >
-      {({ isSubmitting }) => (
-        <Form
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            marginInline: '10rem',
-            border: '1px solid black',
-            padding: '2rem',
+    <>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <Formik
+          initialValues={{
+            firstName: '',
+            lastName: '',
+            email: '',
+            comments: '',
           }}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
         >
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <div style={{ width: '50%', marginRight: '1rem' }}>
-              <label htmlFor="firstName">First Name:</label>
+          {({ isSubmitting }) => (
+            <Form
+              style={{
+                display: 'flex',
+                flexDirection: 'column',
+                // marginInline: '15rem',
+
+                // padding: '2rem',
+              }}
+            >
+              <div style={{ display: 'flex', flexDirection: 'row' }}>
+                <div style={{ width: '50%', marginRight: '1rem' }}>
+                  <label htmlFor="firstName">First Name:</label>
+                  <Field
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    style={{
+                      marginBlock: '8px',
+                      border: '2px solid black',
+                      borderRadius: '10px',
+                      height: '1.5rem',
+                      width: '100%',
+                    }}
+                  />
+                  <ErrorMessage name="firstName" />
+                </div>
+
+                <div style={{ width: '50%' }}>
+                  <label htmlFor="lastName">Last Name:</label>
+                  <Field
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    style={{
+                      marginBlock: '8px',
+                      border: '2px solid black',
+                      borderRadius: '10px',
+                      height: '1.5rem',
+                      width: '100%',
+                    }}
+                  />
+                  <ErrorMessage name="lastName" style={{ color: 'red' }} />
+                </div>
+              </div>
+
+              <label htmlFor="email" style={{ paddingTop: '1rem' }}>
+                Email:
+              </label>
               <Field
-                type="text"
-                name="firstName"
-                id="firstName"
+                type="email"
+                name="email"
+                id="email"
                 style={{
-                  marginBlock: '1rem',
-                  border: '2px solid black',
                   borderRadius: '10px',
                   height: '1.5rem',
-                  width: '100%',
+                  marginBlock: '8px',
                 }}
               />
-              <ErrorMessage name="firstName" />
-            </div>
+              <ErrorMessage name="email" style={{ color: 'red' }} />
 
-            <div style={{ width: '50%' }}>
-              <label htmlFor="lastName">Last Name:</label>
+              <label htmlFor="comments" style={{ paddingTop: '1rem' }}>
+                Comments:
+              </label>
               <Field
-                type="text"
-                name="lastName"
-                id="lastName"
+                as="textarea"
+                name="comments"
+                id="comments"
                 style={{
-                  marginBlock: '1rem',
                   border: '2px solid black',
                   borderRadius: '10px',
-                  height: '1.5rem',
-                  width: '100%',
+                  height: '3rem',
+                  paddingBlock: '2rem',
+                  marginBlock: '8px',
                 }}
               />
-              <ErrorMessage name="lastName" style={{ color: 'red' }} />
-            </div>
-          </div>
-
-          <label htmlFor="email">Email:</label>
-          <Field
-            type="email"
-            name="email"
-            id="email"
-            style={{
-              border: '2px solid black',
-              borderRadius: '10px',
-              height: '1.5rem',
-            }}
-          />
-          <ErrorMessage name="email" style={{ color: 'red' }} />
-
-          <label htmlFor="comments">Comments:</label>
-          <Field
-            as="textarea"
-            name="comments"
-            id="comments"
-            style={{
-              border: '2px solid black',
-              borderRadius: '10px',
-              height: '3rem',
-              paddingBlock: '2rem',
-              marginBlock: '1rem',
-            }}
-          />
-          <ErrorMessage name="comments" />
-          <div style={{ width: '80%', textAlign: 'center' }}>
-            <button type="submit" disabled={isSubmitting}>
-              Submit
-            </button>
-          </div>
-        </Form>
-      )}
-    </Formik>
+              <ErrorMessage name="comments" />
+              <div
+                style={{
+                  width: '100%',
+                  textAlign: 'center',
+                  paddingTop: '2rem',
+                }}
+              >
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  style={{ padding: '1rem 5rem' }}
+                >
+                  send
+                </button>
+              </div>
+            </Form>
+          )}
+        </Formik>
+      </div>
+    </>
   );
 };
 
