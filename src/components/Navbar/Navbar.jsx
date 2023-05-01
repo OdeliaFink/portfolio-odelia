@@ -1,6 +1,6 @@
 import React from 'react';
 import CV from '../../images/CV.pdf';
-
+import { theme } from '../../styles/theme';
 import {
   NavContainer,
   StyledLink,
@@ -15,7 +15,7 @@ const NavigationBar = () => {
   };
   return (
     <>
-      <NavContainer>
+      <NavContainer theme={theme}>
         <LinksContainer>
           <StyledLink to="/">LOGO</StyledLink>
         </LinksContainer>
