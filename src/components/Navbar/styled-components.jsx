@@ -1,45 +1,86 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const breakpointMaximumSizes = {
-  mobile: 767,
-  tablet: 1339,
-};
-
-export const breakpoints = {
-  desktop: `(min-width: ${breakpointMaximumSizes.tablet + 1}px)`,
-  mobile: `(max-width: ${breakpointMaximumSizes.mobile}px)`,
-  tablet: `(max-width: ${breakpointMaximumSizes.tablet}px)`,
-};
-
 export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
-  background-color: ${(props) => props.theme.colors.white};
   align-items: center;
-  border-bottom: 1rem solid black;
+  background-color: grey;
 
-  @media (max-width: ${breakpoints.mobile}) {
-  }
+  color: white;
+  padding: 1rem;
 `;
 
 export const LinksContainer = styled.div`
-  margin: 3rem 5rem;
+  display: flex;
+  align-items: center;
 
-  @media (max-width: ${breakpoints.mobile}) {
-  }
-`;
-
-export const StyledButton = styled.button`
-  margin-inline: 2rem;
-  background-color: black;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 2rem;
+  ${({ desktopOnly }) =>
+    desktopOnly &&
+    `
+    @media (max-width: 768px) {
+      display: none;
+    }
+  `}
 `;
 
 export const StyledLink = styled(Link)`
+  color: white;
+  margin-right: 1rem;
   text-decoration: none;
-  margin-inline: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+`;
+
+export const StyledButton = styled.button`
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+
+  color: white;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const DropdownContainer = styled.div`
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rem;
+  text-align: right;
+  padding-top: 12px; /* add some top padding to make space for the navigation bar */
+  border: 1px solid black;
+  z-index: 1;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+export const DropdownLink = styled(Link)`
+  color: black;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: grey;
+  }
 `;
