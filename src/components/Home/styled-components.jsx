@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ImageContainer = styled.div`
-  border: 5rem solid white;
+  border: 3rem solid white;
 
   @media (max-width: 425px) {
     border: 1rem solid black;
@@ -14,9 +14,11 @@ export const ImageContainer = styled.div`
 `;
 export const StyledButton = styled.button`
   padding: 1rem 5rem;
-  background-color: grey;
-  border: none;
+  background-color: #273469;
+  border: 3px solid black;
   border-radius: 2rem;
+  color: white;
+  font-weight: bold;
 
   @media (max-width: 425px) {
     padding: 1rem;
@@ -27,8 +29,9 @@ export const StyledImage = styled.img`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
   object-fit: cover;
+  box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.4);
 
   opacity: 0.8;
 

@@ -24,6 +24,16 @@ export const LinksContainer = styled.div`
   `}
 `;
 
+export const StyledLogo = styled(Link)`
+  font-family: CoveredByYourGrace-Regular;
+  font-size: 3rem;
+  text-decoration: none;
+`;
+
+export const LogoContainer = styled.div`
+  padding-left: 2rem;
+`;
+
 export const StyledLink = styled(Link)`
   color: white;
   margin-right: 1rem;

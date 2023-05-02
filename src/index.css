@@ -11,6 +11,13 @@ a {
   color: black;
 }
 
+@font-face {
+  font-family: 'CoveredByYourGrace-Regular';
+  src: url('./styles/CoveredByYourGrace-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

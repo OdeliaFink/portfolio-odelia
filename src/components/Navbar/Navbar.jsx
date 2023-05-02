@@ -4,7 +4,9 @@ import { FaHamburger, FaTimes, FaAlignJustify } from 'react-icons/fa';
 import { theme } from '../../styles/theme';
 
 import {
+  StyledLogo,
   NavContainer,
+  LogoContainer,
   StyledLink,
   LinksContainer,
   StyledButton,
@@ -49,9 +51,9 @@ const NavigationBar = () => {
   return (
     <>
       <NavContainer theme={theme}>
-        <LinksContainer>
-          <StyledLink to="/">LOGO</StyledLink>
-        </LinksContainer>
+        <LogoContainer>
+          <StyledLogo to="/">Odelia</StyledLogo>
+        </LogoContainer>
         <LinksContainer desktopOnly>
           <StyledLink to="/projects">Projects</StyledLink>
           <StyledLink to="/contact">Contact</StyledLink>
