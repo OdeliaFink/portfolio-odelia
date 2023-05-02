@@ -57,11 +57,11 @@ export const IconContainer = styled.div`
 `;
 
 export const DropdownContainer = styled.div`
-  position: fixed;
+  position: absolute;
   left: 0;
   display: flex;
   flex-direction: column;
-  margin-left: 20rem;
+  margin-left: 22rem;
   text-align: right;
 
   padding-top: 12px; /* add some top padding to make space for the navigation bar */
@@ -77,8 +77,8 @@ export const DropdownLink = styled(Link)`
   color: black;
   padding: 1rem;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 0.8rem;
+
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -89,5 +89,10 @@ export const DropdownLink = styled(Link)`
     background-color: grey;
     color: white;
     border: 1px dash black;
+  }
+
+  @media (max-width: 425px) {
+    background-color: grey;
+    opacity: 0.8;
   }
 `;

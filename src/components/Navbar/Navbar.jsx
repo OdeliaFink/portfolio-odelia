@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CV from '../../images/CV.pdf';
-import { FaHamburger, FaTimes, FaRaspberryPi } from 'react-icons/fa';
+import { FaHamburger, FaTimes, FaAlignJustify } from 'react-icons/fa';
 import { theme } from '../../styles/theme';
 
 import {
@@ -36,6 +36,16 @@ const NavigationBar = () => {
     window.open(resumeUrl, '_blank');
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsMenuOpen(false);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <NavContainer theme={theme}>
@@ -51,7 +61,7 @@ const NavigationBar = () => {
           {isMenuOpen ? (
             <FaTimes color="black" />
           ) : (
-            <FaRaspberryPi color="black" />
+            <FaAlignJustify color="black" />
           )}
         </IconContainer>
       </NavContainer>

@@ -10,6 +10,10 @@ const AboutMeContainer = styled.div`
   align-items: center;
   margin-inline: 14rem;
   margin-block: 3rem;
+
+  @media (max-width: 425px) {
+    margin-inline: 1rem;
+  }
 `;
 
 const AboutMeLeft = styled.div`
