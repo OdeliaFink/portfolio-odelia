@@ -35,7 +35,7 @@ export const StyledLink = styled(Link)`
 export const StyledButton = styled.button`
   background-color: grey;
   color: white;
-  border: none;
+  border: 1px solid black;
   padding: 0.5rem 1rem;
   border-radius: 0.3rem;
   margin-left: 1rem;
@@ -63,8 +63,9 @@ export const DropdownContainer = styled.div`
   flex-direction: column;
   margin-left: 20rem;
   text-align: right;
+
   padding-top: 12px; /* add some top padding to make space for the navigation bar */
-  border: 1px solid black;
+
   z-index: 1;
 
   @media (min-width: 769px) {
@@ -82,5 +83,11 @@ export const DropdownLink = styled(Link)`
 
   &:hover {
     background-color: grey;
+  }
+
+  &:nth-child(6) {
+    background-color: grey;
+    color: white;
+    border: 1px dash black;
   }
 `;

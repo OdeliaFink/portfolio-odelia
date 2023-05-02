@@ -26,7 +26,6 @@ export const breakpoints = {
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const isDesktop = breakpoints.desktop;
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -58,9 +57,13 @@ const NavigationBar = () => {
       </NavContainer>
       {isMenuOpen && (
         <DropdownContainer>
+          <div style={{ border: '1px solid black' }} />
           <DropdownLink to="/projects">Projects</DropdownLink>
+          <div style={{ border: '1px solid black' }} />
           <DropdownLink to="/contact">Contact</DropdownLink>
+          <div style={{ border: '1px solid black' }} />
           <DropdownLink onClick={handleDownloadResume}>Resume</DropdownLink>
+          <div style={{ border: '1px solid black' }} />
         </DropdownContainer>
       )}
     </>
