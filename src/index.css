@@ -17,6 +17,30 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'DM-Sans';
+  src: url('./styles/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM-Sans';
+  src: url('./styles/DMSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'DM-Sans';
+  src: url('./styles/DMSans-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: medium;
+}
+@font-face {
+  font-family: 'DM-SerifDisplay';
+  src: url('./styles/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: medium;
+  font-style: medium;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -26,4 +50,12 @@ code {
 #root {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+p {
+  font-family: 'DM-Sans';
+}
+
+h1 {
+  font-family: 'DM-SerifDisplay';
 }

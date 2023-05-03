@@ -9,7 +9,7 @@ export const ImageContainer = styled.div`
 
   height: auto;
   position: relative;
-  padding-top: 70%;
+  padding-top: 80%;
   overflow: hidden;
 `;
 export const StyledButton = styled.button`
@@ -29,7 +29,7 @@ export const StyledImage = styled.img`
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
+  height: 70%;
   object-fit: cover;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.4);
 
@@ -37,6 +37,7 @@ export const StyledImage = styled.img`
 
   @media (max-width: 425px) {
     opacity: 0.4;
+    height: 100%;
   }
 `;
 export const Container = styled.div`
@@ -47,9 +48,9 @@ export const ContentContainer = styled.div`
   position: absolute;
   top: 2rem;
   left: 2rem;
-  padding-block: 10rem;
-  padding-left: 4rem;
-  margin-right: 54rem;
+  padding-block: 5rem;
+  padding-left: 5rem;
+  margin-right: 38rem;
   border: 0.5rem solid grey;
 
   @media (max-width: 425px) {
@@ -72,7 +73,7 @@ export const Title = styled.h1`
   }
 `;
 export const Description = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 
   @media (max-width: 425px) {

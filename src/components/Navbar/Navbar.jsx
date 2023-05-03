@@ -55,9 +55,9 @@ const NavigationBar = () => {
           <StyledLogo to="/">Odelia</StyledLogo>
         </LogoContainer>
         <LinksContainer desktopOnly>
-          <StyledLink to="/projects">Projects</StyledLink>
-          <StyledLink to="/contact">Contact</StyledLink>
-          <StyledButton onClick={handleDownloadResume}>Resume</StyledButton>
+          <StyledLink to="/projects">projects</StyledLink>
+          <StyledLink to="/contact">contact</StyledLink>
+          <StyledButton onClick={handleDownloadResume}>resume</StyledButton>
         </LinksContainer>
         <IconContainer onClick={handleToggleMenu}>
           {isMenuOpen ? (

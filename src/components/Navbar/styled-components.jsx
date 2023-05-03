@@ -5,7 +5,7 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
+  background-color: white;
 
   color: white;
   padding: 1rem;
@@ -14,6 +14,7 @@ export const NavContainer = styled.nav`
 export const LinksContainer = styled.div`
   display: flex;
   align-items: center;
+  margin-inline: 3rem;
 
   ${({ desktopOnly }) =>
     desktopOnly &&
@@ -26,31 +27,42 @@ export const LinksContainer = styled.div`
 
 export const StyledLogo = styled(Link)`
   font-family: CoveredByYourGrace-Regular;
-  font-size: 3rem;
+  font-size: 4rem;
   text-decoration: none;
 `;
 
 export const LogoContainer = styled.div`
-  padding-left: 2rem;
+  padding-left: 4rem;
 `;
 
 export const StyledLink = styled(Link)`
   color: white;
-  margin-right: 1rem;
+  margin-right: 2rem;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: regular;
+  font-family: DM-SerifDisplay;
+  color: black;
 `;
 
 export const StyledButton = styled.button`
   background-color: grey;
   color: white;
   border: 1px solid black;
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
+  padding: 1rem 1.2rem;
+  border-radius: 3rem;
   margin-left: 1rem;
   cursor: pointer;
   font-weight: bold;
+  font-family: DM-SerifDisplay;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+
+  &:hover {
+    background-color: #273469;
+    border: 1px solid white;
+    transition: 1s background-color;
+  }
 `;
 
 export const IconContainer = styled.div`
