@@ -29,7 +29,7 @@ export const StyledImage = styled.img`
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 45%;
   object-fit: cover;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.4);
 
@@ -51,7 +51,6 @@ export const ContentContainer = styled.div`
   padding-block: 5rem;
   padding-left: 5rem;
   margin-right: 38rem;
-  border: 0.5rem solid grey;
 
   @media (max-width: 425px) {
     border: none;
@@ -67,6 +66,7 @@ export const Title = styled.h1`
   font-size: 3rem;
   font-weight: bold;
   color: white;
+  font-family: Montserrat-Bold;
 
   @media (max-width: 425px) {
     font-size: 1.5rem;

@@ -41,8 +41,12 @@ export const StyledLink = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: regular;
-  font-family: DM-SerifDisplay;
+  font-family: Montserrat-ExtraLight;
   color: black;
+
+  &:hover {
+    font-family: Montserrat-Bold;
+  }
 `;
 
 export const StyledButton = styled.button`

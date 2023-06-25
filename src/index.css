@@ -1,14 +1,18 @@
 body {
   margin: 0 auto;
 
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 a {
   color: black;
+}
+
+h1 {
+  font-family: 'Montserrat-Bold';
 }
 
 @font-face {
@@ -17,29 +21,18 @@ a {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'DM-Sans';
-  src: url('./styles/DMSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'DM-Sans';
-  src: url('./styles/DMSans-Bold.ttf') format('truetype');
+  font-family: 'Montserrat-Bold';
+  src: url('./styles/Montserrat-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: bold;
 }
 @font-face {
-  font-family: 'DM-Sans';
-  src: url('./styles/DMSans-Medium.ttf') format('truetype');
-  font-weight: medium;
-  font-style: medium;
-}
-@font-face {
-  font-family: 'DM-SerifDisplay';
-  src: url('./styles/DMSerifDisplay-Regular.ttf') format('truetype');
-  font-weight: medium;
-  font-style: medium;
+  font-family: 'Montserrat-ExtraLight';
+  src: url('./styles/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
 }
 
 code {
