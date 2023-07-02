@@ -16,8 +16,8 @@ const Home = () => {
   return (
     <>
       <Container>
-        <ImageContainer className="aspect-ratio-box">
-          <StyledImage src={Image2} alt="Background" />
+        <ImageContainer>
+          <StyledImage src={Image2} />
         </ImageContainer>
         <ContentContainer>
           <Title>Welcome to My Website</Title>

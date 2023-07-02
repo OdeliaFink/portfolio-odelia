@@ -33,7 +33,7 @@ export const StyledImage = styled.img`
   object-fit: cover;
   box-shadow: 3px 6px 20px rgba(0, 0, 0, 0.4);
 
-  opacity: 0.8;
+  opacity: 0.2;
 
   @media (max-width: 425px) {
     opacity: 0.4;
@@ -63,9 +63,9 @@ export const ContentContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 7rem;
   font-weight: bold;
-  color: white;
+  color: black;
   font-family: Montserrat-Bold;
 
   @media (max-width: 425px) {
@@ -74,7 +74,7 @@ export const Title = styled.h1`
 `;
 export const Description = styled.p`
   font-size: 1.2rem;
-  color: white;
+  color: black;
 
   @media (max-width: 425px) {
     font-size: 12px;
