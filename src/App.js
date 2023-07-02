@@ -20,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
           </Routes>
         </Router>
+        <Projects />
         <Footer />
       </ThemeContext.Provider>
     </>

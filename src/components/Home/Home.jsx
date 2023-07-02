@@ -11,6 +11,7 @@ import {
 } from './styled-components';
 
 import { Link } from 'react-router-dom';
+import Projects from '../Projects/Projects';
 
 const Home = () => {
   return (
