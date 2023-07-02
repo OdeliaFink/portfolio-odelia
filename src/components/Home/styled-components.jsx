@@ -75,6 +75,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
   font-size: 1.2rem;
   color: black;
+  font-family: Montserrat-Thin;
 
   @media (max-width: 425px) {
     font-size: 12px;

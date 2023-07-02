@@ -34,6 +34,12 @@ h1 {
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('./styles/Montserrat-Thin.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
