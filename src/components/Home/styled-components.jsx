@@ -13,9 +13,7 @@ import styled from 'styled-components';
 //   overflow: hidden;
 // `;
 
-export const ImageContainer = styled.div`
-  height: auto;
-`;
+export const ImageContainer = styled.div``;
 
 // export const StyledImage = styled.img`
 //   position: absolute;
@@ -33,8 +31,18 @@ export const ImageContainer = styled.div`
 // `;
 
 export const StyledImage = styled.img`
-  height: 45%;
+  height: 45rem;
   width: 100%;
+  object-fit: cover;
+
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to top, rgba(0, 0, 1, 1), rgba(0, 0, 0, 0));
 `;
 
 export const StyledButton = styled.button`
@@ -84,9 +92,9 @@ export const Title = styled.h1`
   }
 `;
 export const Description = styled.p`
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: black;
-  font-family: Montserrat-Thin;
+  font-family: Montserrat-Regular;
 
   @media (max-width: 425px) {
     font-size: 12px;
