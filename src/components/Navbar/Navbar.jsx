@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CV from '../../images/CV.pdf';
 import { FaHamburger, FaTimes, FaAlignJustify } from 'react-icons/fa';
 import { theme } from '../../styles/theme';
-
+import Marquee from 'react-fast-marquee';
 import {
   StyledLogo,
   NavContainer,
@@ -80,6 +80,10 @@ const NavigationBar = () => {
           <div style={{ border: '1px solid black' }} />
         </DropdownContainer>
       )}
+      <Marquee>
+        I can be a React component, multiple React components, or just some
+        text.
+      </Marquee>
     </>
   );
 };
