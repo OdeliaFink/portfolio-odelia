@@ -58,7 +58,7 @@ export const StyledButton = styled.button`
   margin-left: 1rem;
   cursor: pointer;
   font-weight: bold;
-  font-family: DM-SerifDisplay;
+  font-family: Montserrat-Regular;
   letter-spacing: 2px;
   font-size: 1.4rem;
 
@@ -104,6 +104,7 @@ export const DropdownLink = styled(Link)`
   padding: 1rem;
   text-decoration: none;
   font-size: 0.8rem;
+  font-family: Montserrat-Regular;
 
   transition: background-color 0.2s ease;
 
