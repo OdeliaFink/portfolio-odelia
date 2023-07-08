@@ -80,7 +80,7 @@ const NavigationBar = () => {
           <div style={{ border: '1px solid black' }} />
         </DropdownContainer>
       )}
-      <Marquee>
+      <Marquee pauseOnHover={true} speed={70} delay={0}>
         I can be a React component, multiple React components, or just some
         text.
       </Marquee>
