@@ -44,11 +44,6 @@ const AboutMeImage = styled.img`
   object-fit: cover;
 `;
 
-// const StyledContactForm = styled.form`
-//   display: flex;
-//   flex-direction: column;
-// `;
-
 const ContactFormLabel = styled.label`
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
