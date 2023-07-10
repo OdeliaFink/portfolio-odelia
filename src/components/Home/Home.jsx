@@ -1,4 +1,5 @@
 import React from 'react';
+import Typical from 'react-typical';
 import Image2 from '../../images/image2.jpg';
 import {
   ImageContainer,
@@ -21,11 +22,26 @@ const Home = () => {
           <StyledImage src={Image2} />
         </ImageContainer>
         <ContentContainer>
-          <Title>Welcome to My Website</Title>
+          <Title>Hi there</Title>
+          <div></div>
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </Description>
+          <Typical
+            steps={[
+              'Full-Stack Developer.',
+              2000,
+              'Specialized in React',
+              2000,
+              'JavaScript',
+              2000,
+              'TypeScript',
+              2000,
+            ]}
+            wrapper="h1"
+            className={'intro'}
+          />
           <Link to="/projects" className="#projects">
             <StyledButton>see projects</StyledButton>
           </Link>
