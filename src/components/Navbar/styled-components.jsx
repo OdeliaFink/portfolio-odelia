@@ -6,7 +6,6 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: white;
-
   color: white;
   padding: 1rem;
 `;
@@ -27,7 +26,7 @@ export const LinksContainer = styled.div`
 
 export const StyledLogo = styled(Link)`
   font-family: CoveredByYourGrace-Regular;
-  font-size: 4rem;
+  font-size: 5rem;
   text-decoration: none;
 `;
 

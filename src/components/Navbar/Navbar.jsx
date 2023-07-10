@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CV from '../../images/CV.pdf';
+import { Link } from 'react-scroll';
 import { FaHamburger, FaTimes, FaAlignJustify } from 'react-icons/fa';
 import { theme } from '../../styles/theme';
 import Marquee from 'react-fast-marquee';
@@ -54,11 +55,17 @@ const NavigationBar = () => {
         <LogoContainer>
           <StyledLogo to="/">Odelia</StyledLogo>
         </LogoContainer>
-        <LinksContainer desktopOnly>
-          <StyledLink to="/projects" className="#projects">
-            projects
+        <LinksContainer>
+          <StyledLink>
+            <Link to="projects" smooth={true} duration={500}>
+              Projects
+            </Link>
           </StyledLink>
-          <StyledLink to="/contact">contact</StyledLink>
+          <StyledLink>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </StyledLink>
           <StyledButton onClick={handleDownloadResume}>resume</StyledButton>
         </LinksContainer>
         <IconContainer onClick={handleToggleMenu}>
@@ -94,3 +101,15 @@ const NavigationBar = () => {
 };
 
 export default NavigationBar;
+
+{
+  /* <DropdownContainer>
+<div style={{ border: '1px solid black' }} />
+<DropdownLink to="/projects">Projects</DropdownLink>
+<div style={{ border: '1px solid black' }} />
+<DropdownLink to="/contact">Contact</DropdownLink>
+<div style={{ border: '1px solid black' }} />
+<DropdownLink onClick={handleDownloadResume}>Resume</DropdownLink>
+<div style={{ border: '1px solid black' }} />
+</DropdownContainer> */
+}
