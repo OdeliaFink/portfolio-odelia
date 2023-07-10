@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import { theme } from '../src/styles/theme';
 import ContactForm from './components/ContactForm';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact';
 
 export const ThemeContext = createContext();
 
@@ -18,12 +19,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
+
+          <div id="contact">
+            <Contact />
+          </div>
           <div id="projects">
             <Projects />
           </div>
-          <div id="contact">
-            <ContactForm />
-          </div>
+          <ContactForm />
         </Router>
         <Footer />
       </ThemeContext.Provider>

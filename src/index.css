@@ -15,6 +15,10 @@ h1 {
   font-family: 'Montserrat-Bold';
 }
 
+p {
+  font-family: 'Montserrat-Regular';
+}
+
 @font-face {
   font-family: 'CoveredByYourGrace-Regular';
   src: url('./styles/CoveredByYourGrace-Regular.ttf') format('truetype');

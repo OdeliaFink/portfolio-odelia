@@ -41,7 +41,8 @@ export const CarouselRoot = styled.div`
 `;
 
 export const Container = styled.div`
-  height: 45rem;
+  height: 48rem;
+  padding-block: 5rem;
 
   @media (max-width: 425px) {
     margin-block: 0rem;
@@ -80,13 +81,10 @@ export const ProjectDesc = styled.p`
 `;
 
 export const CarouselImage = styled.img`
-  max-width: 100%;
+  width: 80%;
   max-height: 100%;
-  margin: auto;
-  display: block;
-  border: 1.2rem solid grey;
-  border-radius: 10%;
-
+  object-fit: cover;
+  border-radius: 1%;
   @media (max-width: 425px) {
     width: 100%;
     margin-inline: 0rem;
