@@ -30,9 +30,9 @@ const Home = () => {
           </Description>
           <Typical
             steps={[
-              'Full-Stack Developer.',
+              'Full-Stack Developer',
               2000,
-              'Specialized in React',
+              'React',
               2000,
               'JavaScript',
               2000,
@@ -40,11 +40,12 @@ const Home = () => {
               2000,
             ]}
             wrapper="h1"
+            style={{ fontFamily: 'Montserrat-Thin' }}
             className={'intro'}
           />
-          <Link to="/projects" className="#projects">
+          {/* <Link to="/projects" className="#projects">
             <StyledButton>see projects</StyledButton>
-          </Link>
+          </Link> */}
         </ContentContainer>
       </Container>
     </>

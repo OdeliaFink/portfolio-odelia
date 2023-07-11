@@ -8,6 +8,7 @@ export const NavContainer = styled.nav`
   background-color: white;
   color: white;
   padding: 1rem;
+  position: sticky;
 `;
 
 export const LinksContainer = styled.div`

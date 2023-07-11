@@ -92,7 +92,7 @@ export const Title = styled.h1`
   }
 `;
 export const Description = styled.p`
-  font-size: 1rem;
+  font-size: 2rem;
   color: black;
   font-family: Montserrat-Regular;
 
