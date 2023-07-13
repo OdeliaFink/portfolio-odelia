@@ -25,24 +25,28 @@ const Home = () => {
           <Title>Hi there</Title>
           <div></div>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            welcome to my portfolio! Other than being a food and music
+            enthusiast, my passion lies in web development. i currently
+            specialize in
           </Description>
-          <Typical
-            steps={[
-              'Full-Stack Developer',
-              2000,
-              'React',
-              2000,
-              'JavaScript',
-              2000,
-              'TypeScript',
-              2000,
-            ]}
-            wrapper="h1"
-            style={{ fontFamily: 'Montserrat-Thin' }}
-            className={'intro'}
-          />
+          <h2
+            style={{ fontFamily: 'Montserrat-Bold', border: '1px solid black' }}
+          >
+            <Typical
+              steps={[
+                'full-stack development',
+                2000,
+                'react',
+                2000,
+                'javascript',
+                2000,
+                'typescript',
+                2000,
+              ]}
+              loop={Infinity}
+              className={'intro'}
+            />
+          </h2>
           {/* <Link to="/projects" className="#projects">
             <StyledButton>see projects</StyledButton>
           </Link> */}

@@ -29,6 +29,7 @@ export const breakpoints = {
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -39,19 +40,30 @@ const NavigationBar = () => {
     window.open(resumeUrl, '_blank');
   };
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsMenuOpen(false);
+  //   };
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsMenuOpen(false);
+      setIsScrolled(window.scrollY > 0);
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
     <>
-      <NavContainer theme={theme}>
+      <NavContainer theme={theme} isScrolled={isScrolled}>
         <LogoContainer>
           <StyledLogo to="/">Odelia</StyledLogo>
         </LogoContainer>

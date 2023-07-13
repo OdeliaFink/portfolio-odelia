@@ -67,8 +67,8 @@ export const ContentContainer = styled.div`
   top: 2rem;
   left: 2rem;
   padding-block: 5rem;
-  padding-left: 5rem;
-  margin-right: 38rem;
+  padding-left: 3rem;
+  margin-right: 45rem;
 
   @media (max-width: 425px) {
     border: none;

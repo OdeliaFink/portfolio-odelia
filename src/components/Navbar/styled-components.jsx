@@ -5,10 +5,13 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: ${({ isScrolled }) =>
+    isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'white'};
   color: white;
   padding: 1rem;
-  position: sticky;
+  position: fixed;
+  gap: 60rem;
+  transition: background-color 0.3s ease;
 `;
 
 export const LinksContainer = styled.div`
