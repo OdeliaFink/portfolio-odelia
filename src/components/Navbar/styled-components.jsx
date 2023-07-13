@@ -6,11 +6,12 @@ export const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: ${({ isScrolled }) =>
-    isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'white'};
+    isScrolled ? 'rgba(255, 255, 255, 0.8)' : 'transparent'};
   color: white;
   padding: 1rem;
   position: fixed;
-  gap: 60rem;
+  gap: 66rem;
+  z-index: 999;
   transition: background-color 0.3s ease;
 `;
 

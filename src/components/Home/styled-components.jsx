@@ -1,34 +1,6 @@
 import styled from 'styled-components';
 
-// export const ImageContainer = styled.div`
-//   border: 3rem solid white;
-
-//   @media (max-width: 425px) {
-//     border: 1rem solid black;
-//   }
-
-//   height: auto;
-//   position: relative;
-//   padding-top: 80%;
-//   overflow: hidden;
-// `;
-
 export const ImageContainer = styled.div``;
-
-// export const StyledImage = styled.img`
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 45%;
-//   object-fit: cover;
-//   opacity: 0.2;
-
-//   @media (max-width: 425px) {
-//     opacity: 0.4;
-//     height: 100%;
-//   }
-// `;
 
 export const StyledImage = styled.img`
   height: 45rem;
