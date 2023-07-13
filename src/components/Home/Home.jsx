@@ -1,5 +1,5 @@
 import React from 'react';
-import Typical from 'react-typical';
+
 import Image2 from '../../images/image2.jpg';
 import {
   ImageContainer,
@@ -32,7 +32,7 @@ const Home = () => {
           <h2
             style={{ fontFamily: 'Montserrat-Bold', border: '1px solid black' }}
           >
-            <Typical
+            {/* <Typical
               steps={[
                 'full-stack development',
                 2000,
@@ -45,7 +45,7 @@ const Home = () => {
               ]}
               loop={Infinity}
               className={'intro'}
-            />
+            /> */}
           </h2>
           {/* <Link to="/projects" className="#projects">
             <StyledButton>see projects</StyledButton>

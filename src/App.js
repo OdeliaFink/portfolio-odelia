@@ -7,6 +7,7 @@ import { theme } from '../src/styles/theme';
 import ContactForm from './components/ContactForm';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact';
+import Skills from './components/Skills/Skills';
 
 export const ThemeContext = createContext();
 
@@ -25,6 +26,9 @@ const App = () => {
           </div>
           <div id="projects">
             <Projects />
+          </div>
+          <div>
+            <Skills />
           </div>
           <ContactForm />
         </Router>

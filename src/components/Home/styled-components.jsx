@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ImageContainer = styled.div``;
 
 export const StyledImage = styled.img`
-  height: 45rem;
+  height: 60rem;
   width: 100%;
   object-fit: cover;
 
