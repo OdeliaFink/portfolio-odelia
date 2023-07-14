@@ -1,0 +1,14 @@
+@keyframes typing-animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  animation: typing-animation 0.5s infinite;
+}

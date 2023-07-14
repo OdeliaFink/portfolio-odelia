@@ -13,8 +13,10 @@ import {
 
 import { Link } from 'react-router-dom';
 import Projects from '../Projects/Projects';
+import Typewriter from '../Typewriter/Typerwriter';
 
 const Home = () => {
+  const texts = ['Hello', 'Welcome', 'Typewriter Effect'];
   return (
     <>
       <Container>
@@ -29,27 +31,9 @@ const Home = () => {
             enthusiast, my passion lies in web development. i currently
             specialize in
           </Description>
-          <h2
-            style={{ fontFamily: 'Montserrat-Bold', border: '1px solid black' }}
-          >
-            {/* <Typical
-              steps={[
-                'full-stack development',
-                2000,
-                'react',
-                2000,
-                'javascript',
-                2000,
-                'typescript',
-                2000,
-              ]}
-              loop={Infinity}
-              className={'intro'}
-            /> */}
-          </h2>
-          {/* <Link to="/projects" className="#projects">
-            <StyledButton>see projects</StyledButton>
-          </Link> */}
+          <h1>
+            <Typewriter textArray={texts} loop />
+          </h1>
         </ContentContainer>
       </Container>
     </>
